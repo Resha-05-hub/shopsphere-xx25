@@ -1,0 +1,62 @@
+.watch-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .watch-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+    padding: 10px;
+  }
+  
+  .watch-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .watch-details {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .watch-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d63384; /* Primary theme color */
+  }
+  
+  .watch-price {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .watch-quantity {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .wishlist-button {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  .review-item p {
+    color: black; /* Ensures review text is black */
+    font-size: 16px;
+}

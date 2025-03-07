@@ -1,0 +1,314 @@
+/* Theme Colors */
+:root {
+  --primary-color: #d63384;
+  --secondary-color: #6a0572;
+  --accent-color: #ffb703;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+ 
+}
+
+/* Container */
+.container {
+  width: 85%;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6;
+  color:white;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 15px rgba(214, 51, 132, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  transform: scale(1.07);
+}
+
+/* Inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, textarea:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0px 4px 10px rgba(106, 5, 114, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0px 5px 15px rgba(167, 21, 21, 0.3);
+  border-bottom: 2px solid white; /* Adds a ruler below the navbar */
+}
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transform: scale(1.05);
+}
+
+/* Sales Banner */
+.sales-banner {
+  width: 100%;
+  height: 90vh;
+  background-image: url('https://t3.ftcdn.net/jpg/06/26/43/88/360_F_626438875_UiXvnbdBg9AS380Nc7cuIm0cmrCamPyp.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid white; /* Adds a ruler below the navbar */
+}
+
+/* Category Bar */
+.category-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: var(--secondary-color);
+  padding: 18px;
+  border-bottom: 2px solid white; /* Adds a ruler below the navbar */
+}
+
+.category-button {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.category-button:hover {
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+  transform: scale(1.1);
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 25px;
+}
+
+/* Product Card */
+.product-card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.08);
+}
+
+/* Cart */
+.cart {
+  background: #fff;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 25px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 1rem;
+}
+
+.cart-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+footer {
+  background: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  .sales-banner {
+    font-size: 1.6rem;
+    padding: 40px;
+  }
+  .category-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .cart-item img {
+    width: 60px;
+  }
+}
+
+/* Buttons Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Add to Cart & Wishlist Buttons */
+.add-to-cart, .add-to-wishlist {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.add-to-cart {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
+
+.add-to-cart:hover {
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  transform: scale(1.05);
+}
+
+.add-to-wishlist {
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+  color: white;
+}
+
+.add-to-wishlist:hover {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  transform: scale(1.05);
+}
+.sales-text {
+  position: absolute;
+  right: 5%; /* Adjust as needed */
+  top: 60%;
+  transform: translateY(-50%);
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center; /* Align text to the left */
+  white-space: pre-line; /* Allows text to wrap into two lines */
+  width: 50%; /* Adjust the width to fit your needs */
+}
+
+/* Logo Text */
+.logo-text {
+  font-size: 3rem; /* Adjust this value to make the text bigger */
+  font-weight: bold;
+  margin-left: 10px; /* Space between image and text */
+  color: white;
+  vertical-align: middle;
+}
+/* Logo Image */
+.logo-img {
+  width: 60px; /* Adjust the width to your preference */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle;
+  margin-right: 10px; /* Space between image and text */
+  border-radius: 8px; /* Optional: add rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
